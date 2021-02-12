@@ -44,7 +44,7 @@ export default class Build extends Command {
         "--use", "abort= ",
         "--use", "~lib/builtins/seed=assembly/index/dfxSeed",
         "--target", "release",
-        "--transform","./node_modules/@cdk-as/cdk/transform/index.js"
+        "--transform", __dirname + "/node_modules/@cdk-as/cdk/transform/index.js"
       ], {
         stdout: process.stdout,
         stderr: process.stderr
